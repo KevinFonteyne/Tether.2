@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(7, 64, 114);
+}
+
+h1{
+  color: rgb(137, 43, 226);  
+}
+
+.navbar-brand{
+    color: aqua;
+}
+
+nav{
+    background-color: rgb(65, 6, 6);
+}
