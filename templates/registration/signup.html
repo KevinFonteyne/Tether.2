@@ -9,6 +9,7 @@
 <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
+    <label for="email">Email</label><input type="email">
     <input type="submit" value="Sign Up" class="btn btn-success">
 </form>
 {% endblock content %}

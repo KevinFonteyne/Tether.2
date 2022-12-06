@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+fals!&yy&e_1_!0e#ja8d7vc_gc-45yf+%p*9mmr22721#8$g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "herokuapp.com"]
 
 
 # Application definition
@@ -69,6 +69,8 @@ TEMPLATES = [
         },
     },
 ]
+
+AUTH_USER_MODEL = 'accounts.Account'
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
@@ -127,3 +129,4 @@ STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
