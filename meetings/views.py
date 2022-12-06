@@ -1,7 +1,14 @@
-from django.views.generic import TemplateView
+from django.shortcuts import render
+from .forms import CalendarForm
 
-class Calendar(TemplateView):
-    template_name='meetings/calendar.html'
+def calendar_view(request):
+    context = {}
+    form = CalendarForm()
+    context['form'] = form
+    if request.GET:
+        temp = request.GET['cal_field']
+        print(type(temp))
+    return render( request, 'meetings/calendar.html', context)
 
 
 
