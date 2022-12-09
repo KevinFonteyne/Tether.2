@@ -1,15 +1,59 @@
 body{
-    background-color: rgb(7, 64, 114);
+    background-color: rgb(15, 111, 196);
 }
 
 h1{
-  color: rgb(137, 43, 226);  
+  color: rgb(19, 53, 204);  
 }
 
 .navbar-brand{
-    color: aqua;
+    color: rgb(8, 88, 88);
+    font-size: larger;
 }
 
 nav{
-    background-color: rgb(65, 6, 6);
+    background-color: rgb(9, 206, 173);
 }
+button{
+    background-color: darkblue;
+}
+
+#calendar {
+    width: 98%;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 13px;
+  }
+  
+#calendar tr, #calendar td {
+    border: 1px solid black;
+  }
+  
+#calendar th {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+#calendar td {
+    width: 200px;
+    height: 150px;
+    padding: 20px 0px 0px 5px;
+  }
+  
+.month {
+    font-size: 25px;
+  }
+  
+.date {
+    font-size: 16px;
+  }
+  
+ul {
+    height: 100%;
+    padding: 0px 5px 0px 20px;
+  }
+  
+a {
+    color: #17a2b8;
+  }
